@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#162820">
+    <meta name="description" content="ریتم، دفتر تمرین و برنامه‌ریز ورزش‌های زندگی روزمره">
+    <link rel="icon" href="/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+    <title>ریتم | دفتر تمرین چندورزشی</title>
+    <script type="module" src="/app.mjs"></script>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" aria-label="منوی اصلی">
+        <a class="brand" href="#dashboard" aria-label="ریتم، صفحهٔ اصلی">
+          <img src="/mark.svg" alt="" width="40" height="40">
+          <span><strong>ریتم</strong><small>دفتر تمرین تو</small></span>
+          <span class="brand-en" lang="en" dir="ltr">RITM</span>
+        </a>
+        <nav id="nav" aria-label="صفحه‌ها"></nav>
+        <div class="sidebar-bottom">
+          <div class="sidebar-note"><span id="side-icon"></span><strong>هر جلسه، یک قدم</strong><span>ریتم ورزش‌های خودت را پیدا کن.</span></div>
+          <button type="button" class="sidebar-profile" data-action="profile"><span class="avatar" id="avatar"></span><span><strong id="profile-name"></strong><small>تنظیمات ورزش‌ها و روزها</small></span><span id="profile-chevron"></span></button>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div class="topbar-label"><img src="/mark.svg" width="32" height="32" alt=""><span id="section-title">داشبورد</span><span class="topbar-divider"></span><span id="today-label"></span></div>
+          <div class="topbar-actions"><button class="button button-dark" data-action="log" type="button" id="header-add"></button></div>
+        </header>
+        <div id="view" class="view"></div>
+      </main>
+    </div>
+    <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>
